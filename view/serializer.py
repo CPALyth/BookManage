@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from book.models import BookInfo
+from view.models import BookInfo
 
 
 class PeopleSerializer(serializers.Serializer):
