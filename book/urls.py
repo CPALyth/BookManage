@@ -1,6 +1,6 @@
-from django.urls import path, re_path
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('books_drf', views.BooksView.as_view())
+    path('books/', views.BooksView.as_view())
 ]
