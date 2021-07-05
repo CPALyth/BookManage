@@ -10,7 +10,7 @@ class BookView(View):
     def get(self, request):
         books = BookInfo.objects.all()
         ser = BookSerializer(books, many=True)
-        return
+        return JsonResponse(ser.data, safe=False)
 
     def post(self, request):
         # 1 获取数据
