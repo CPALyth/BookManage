@@ -35,7 +35,7 @@ class Migration(migrations.Migration):
                 ('gender', models.SmallIntegerField(choices=[(0, 'male'), (1, 'female')], default=0, verbose_name='性别')),
                 ('description', models.CharField(max_length=200, null=True, verbose_name='描述信息')),
                 ('is_delete', models.BooleanField(default=False, verbose_name='逻辑删除')),
-                ('book', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='book.bookinfo', verbose_name='图书')),
+                ('book', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='view.bookinfo', verbose_name='图书')),
             ],
             options={
                 'verbose_name': '人物信息',
