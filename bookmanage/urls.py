@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('view.urls')),
     path('', include('apiview.urls')),
+    path('', include('genericapiview.urls')),
 ]
