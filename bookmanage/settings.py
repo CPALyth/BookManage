@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'apiview',
     'genericapiview',
     'viewset',
+    'genericviewset',
 ]
 
 MIDDLEWARE = [

@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('apiview.urls')),
     path('', include('genericapiview.urls')),
     path('', include('viewset.urls')),
+    path('', include('genericviewset.urls')),
 ]
