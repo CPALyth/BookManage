@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('viewset.urls')),
     path('', include('genericviewset.urls')),
     path('', include('modelviewset.urls')),
+    path('', include('otherapiview.urls')),
 ]

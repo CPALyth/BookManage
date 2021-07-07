@@ -36,11 +36,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'view',
+    'rest_framework',
     'apiview',
     'genericapiview',
     'viewset',
     'genericviewset',
     'modelviewset',
+    'otherapiview',
 ]
 
 MIDDLEWARE = [
