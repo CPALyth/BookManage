@@ -1,9 +1,11 @@
 from django.urls import path
+from rest_framework.routers import SimpleRouter, DefaultRouter
+
 from . import views
 
-urlpatterns = [
-    path('modelviewset/books/', views.BookView.as_view({'get': 'list', 'post': 'create'})),
-    path('modelviewset/books/<int:pk>/', views.BookView.as_view({'get': 'retrieve',
-                                                                'put': 'update',
-                                                                'delete': 'destroy'})),
-]
+urlpatterns = []
+
+router = DefaultRouter()
+router.register('modelviewset', views.BookView, basename='books')
+print(router.urls)
+urlpatterns += router.urls
