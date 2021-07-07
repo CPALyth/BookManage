@@ -29,3 +29,12 @@ class BookSerializer(serializers.Serializer):
 
     def create(self, validated_data):
         return BookInfo.objects.create(**validated_data)
+
+    def update(self, instance, validated_data):
+        instance.name = validated_data.get('name', instance.name)
+        instance.pub_date = validated_data.get('pub_date', instance.pub_date)
+        instance.readcount = validated_data.get('readcount', instance.readcount)
+        instance.commentcount = validated_data.get('commentcount', instance.commentcount)
+        instance.is_delete = validated_data.get('is_delete', instance.is_delete)
+        instance.save()
+        return instance

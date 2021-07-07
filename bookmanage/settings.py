@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'genericapiview',
     'viewset',
     'genericviewset',
+    'modelviewset',
 ]
 
 MIDDLEWARE = [
